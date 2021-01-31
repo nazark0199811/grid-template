@@ -1,0 +1,25 @@
+.info{
+    &__container {
+        @extend %container;
+        display: grid;
+        grid-template-columns: 1fr 271px;
+        gap: 0 100px;
+      }
+}
+
+.info-content{
+
+    &__title{
+    font-size: 2.5rem;
+}
+    &__article{
+    font-size: 1.125rem;
+    color: $color-gray;
+    text-align: left;
+   }
+
+   &__image{
+       max-width: 271px;
+       max-height: 480px;
+}
+   }
