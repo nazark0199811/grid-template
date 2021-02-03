@@ -4,22 +4,110 @@
         display: grid;
         grid-template-columns: 1fr 271px;
         gap: 0 100px;
+        justify-content: center;
+        margin: auto;
+        vertical-align: middle;
+
+        @include lg-md{
+            grid-template-columns: 1fr 271px;
+            gap: 0 40px;
+        }
+
+        @include md-sm{
+            grid-template-columns: 1fr 236px;
+            gap: 0 20px;
+        }
+
+        @include sm{
+            grid-template-columns: 1fr;
+            gap: 0 20px;
+        }
       }
 }
 
 .info-content{
 
-    &__title{
-    font-size: 2.5rem;
+    &__title {
+        color: $color-primary;
+        font-family: "Roboto Slab", serif;
+
+        h2{
+            margin-top: 0;
+            margin-bottom: 51px;
+            line-height: 1.2em;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+
+        @include lg-md{
+        font-size: 2rem;
+        margin-bottom: 36px;
+    }
+
+    @include md-sm{
+        font-size: 1.5rem;
+        margin-bottom: 32px;
+    }
+    @include sm{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+  }
+
 }
     &__article{
-    font-size: 1.125rem;
     color: $color-gray;
     text-align: left;
+
+       p{
+    margin-bottom: 0px;
+
+    @include lg-min{
+        margin-bottom: 0px; 
+        font-size: 1.125rem; 
+        line-height: 1.15em;
+}
+    &:first-of-type {
+        position: relative;
+
+        &:first-of-type::after {
+            position: absolute;
+            top: 0;
+            width: 2px;
+            height: 200px;
+            content: "";
+            background-color: rgba(99, 117, 136, 0.1);
+            right: -50px;
+            
+            @include lg-md{
+                right: -2px;  
+        }
+
+        @include md-sm{
+            right: -9px; 
+        }
+
+        @include lg-min{
+            font-size: 1.125rem;  
+    }
+        }
+    }
+    }
    }
 
    &__image{
-       max-width: 271px;
-       max-height: 480px;
+       display: grid;
+       align-content: center;
+    justify-items: center;
+
+    @include sm{
+        margin-top: 19px;
+    }
+
+       img{
+        max-width: 100%;
+        max-height: 480px;
+       }
 }
    }
+

@@ -1,7 +1,25 @@
 .info{
+  display: block;
   position: relative;
-  letter-spacing: 0.055em;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  letter-spacing: 0.88px;
   color: $color-primary;
   background-color: $color-gray-light;
+
+  @include lg-md{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
  
+@include md-sm{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@include sm{
+  margin-top: $gap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 }

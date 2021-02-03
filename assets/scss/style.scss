@@ -16,12 +16,13 @@
 
 @import "sections/skills/skills";
 @import "sections/skills/skill-item";
-@import "sections/section-about";
-@import "sections/section-form";
-@import "sections/section-posts";
 
 @import "sections/info/info";
 @import "sections/info/info-content";
-@import "sections/info/info-footer";
+
+@import "sections/section-form";
+
+@import "sections/posts/section-posts";
+@import "sections/posts/posts";
 
 @import "footer";

@@ -1,0 +1,93 @@
+.form{
+    background-color: $color-primary;
+    width: 100%;
+    padding: 30px 0;
+
+    &__container{
+        @extend %container;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "a1 a2 a3"; 
+        gap: $gap;
+
+        @include md-sm{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "a1 a1"
+                                 "a2 a3";                         
+    }
+
+    @include sm{
+        grid-template-columns:repeat(3, 100%);
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3";                         
+}
+    }
+}
+    
+    .form-item{
+        &:first-of-type{
+            @include md-sm{
+                width: 100%;
+}
+        }
+        &__input,
+         &__btn{
+        font-weight: 400px;
+        height: $gap * 3;
+        width: 100%;
+        font-size: 1.125rem;
+    }
+
+    &__input{
+        padding-left: $gap / 2 * 3;
+        letter-spacing: 0.15em;
+        color: $color-gray;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-bottom-color: rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.05);
+        transition: background-color 0.5s;
+
+        &:focus,
+        &:hover {
+            background:rgba(255,255,255, 0.15);
+            transition: 0.5s;
+            border-bottom-color: $color-light;
+            border-color: rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.15);
+
+  }
+    }
+
+    &__btn{
+        display: block;
+        color: $color-light;
+        border: 2px solid rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255, 0.10);
+        border-bottom-color: rgba(255, 255, 255, 0.25) ;
+        transition: background-color 0.5s;
+        text-align: center;
+        letter-spacing: 0.1em;
+        
+  &:focus,
+  &:hover {
+    background-color: $color-accent;
+    border: solid 2px white;
+    transition: 0.5s;
+  }
+    }
+    input::-webkit-input-placeholder { color: $color-gray; }
+    }
+
+
+    .form-item:nth-of-type(1){
+        grid-area: a1;
+    }
+
+    .form-item:nth-of-type(2){
+        grid-area: a2;
+    }
+
+    .form-item:nth-of-type(3){
+        grid-area: a3;
+    }
