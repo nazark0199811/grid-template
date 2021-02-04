@@ -4,3 +4,20 @@
   padding-right: $gap;
   padding-left: $gap;
 }
+
+.btn--primary {
+  height: 60px;
+  padding: 18px $gap;
+
+  border: 2px solid $color-primary;
+  background-color: rgba(45, 54, 81, 0.8);
+
+  @include sm-min {
+    min-width: 350px;
+
+    font-size: 1.125rem;
+  }
+  @include sm {
+    width: 100%;
+  }
+}
