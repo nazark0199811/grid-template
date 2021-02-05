@@ -4,11 +4,7 @@
 
 html {
   overflow-y: scroll;
-
   letter-spacing: 0.1em;
-
-  color: $color-light;
-
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -85,12 +81,18 @@ a {
   @include lg-md {
     min-width: 200px;
     height: 50px;
-    padding: 14px $gap;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
   }
-  @include md {
+  @include md-sm {
     min-width: 170px;
     height: 40px;
-    padding: 9px $gap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
   }
 }
 
