@@ -4,7 +4,9 @@
 
 html {
   overflow-y: scroll;
+
   letter-spacing: 0.1em;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -59,8 +61,9 @@ a {
   transition: background-color 0.5s;
   text-align: center;
   letter-spacing: 0.100em;
+
   font-size: 1.125rem;
-  
+
   &:focus,
   &:hover {
     background-color: $color-accent;
@@ -83,7 +86,9 @@ a {
     height: 50px;
     padding-top: 14px;
     padding-bottom: 14px;
+
     letter-spacing: 0.1em;
+
     font-size: 1rem;
   }
   @include md-sm {
@@ -91,7 +96,9 @@ a {
     height: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+
     letter-spacing: 0.05em;
+
     font-size: 1rem;
   }
 }

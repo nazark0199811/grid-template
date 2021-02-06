@@ -1,4 +1,4 @@
-.posts{
+.posts {
   position: relative;
 
   display: block;
@@ -6,18 +6,16 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  @include lg-md{
+  @include lg-md {
     padding-top: 80px;
-  padding-bottom: 80px;
+    padding-bottom: 80px;
   }
-
-    @include md-sm{
-      padding-top: 60px;
-      padding-bottom: 60px;
-  }
-
-  @include sm{
+  @include md-sm {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+  }
+  @include sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

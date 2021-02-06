@@ -12,14 +12,11 @@
     grid-template-areas: "a1 a2 a3";
     grid-template-columns: repeat(3, 1fr);
     @include md-sm {
-      grid-template-areas: "a1 a1"
-      "a2 a3";
+      grid-template-areas: "a1 a1" "a2 a3";
       grid-template-columns: repeat(2, 1fr);
     }
     @include sm {
-      grid-template-areas: "a1"
-      "a2"
-      "a3";
+      grid-template-areas: "a1" "a2" "a3";
       grid-template-columns: repeat(3, 100%);
     }
   }

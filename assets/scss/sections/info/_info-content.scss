@@ -1,6 +1,5 @@
 .info {
   &__container {
-    @extend %container;
     display: grid;
     justify-content: center;
 
@@ -8,6 +7,7 @@
 
     vertical-align: middle;
 
+    @extend %container;
     gap: 0 100px;
     grid-template-columns: 1fr 271px;
     @include lg-md {
@@ -109,11 +109,9 @@
     @include sm {
       margin-top: 19px;
     }
-
     @include lg-md {
       margin-top: 1px;
     }
-
     justify-items: center;
 
     img {
