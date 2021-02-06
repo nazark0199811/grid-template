@@ -537,6 +537,7 @@ a {
   padding: 100px 0;
   color: #ffffff;
   background-color: #637588;
+  background-image: url(../assets/img/img-header.png);
   background-position: 50% 50%;
   background-size: cover;
 }
