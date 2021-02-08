@@ -25,6 +25,16 @@
       flex-direction: column;
     }
 
+    .btn{
+      @include sm {
+      min-width: 170px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+}
+    }
     .btn:first-of-type {
       @include sm-min {
         margin-right: $gap;
